@@ -6,6 +6,16 @@ Một lô ảnh sản phẩm đã được gán nhãn, nhưng người kiểm tr
 
 Đây là **prototype chạy được trên dữ liệu mô phỏng**. Nó không tự sửa nhãn và chưa chứng minh hiệu quả trên một lô vendor thật.
 
+## Demo đổi kịch bản để thấy kết quả của nhóm thay đổi
+
+Mở [`artifacts/demo_scenarios.html`](artifacts/demo_scenarios.html) và bấm **Tạo kịch bản khác**. Trang vẫn dùng đúng 2.000 ảnh evaluation và phương pháp 15 hàng xóm, nhưng tạo một bản **nhãn đang dùng có 200 lỗi mô phỏng mới**. Sau đó nó tính lại điểm đáng nghi, top 100 của nhóm và top 100 random **trên cùng bản nhãn mới**. Bấm **Xếp hạng của nhóm** hoặc **Random cùng kịch bản** để xem hai hàng chờ; bấm **Hiện đáp án** để đối chiếu lỗi thật.
+
+Trang bắt đầu bằng kịch bản chính seed `677`: nhóm tìm **78 lỗi**. Lượt bấm đầu chuyển sang seed `2000`: nhóm tìm **72 lỗi**. Có 30 kịch bản bổ sung với seed lỗi `2000–2029`, random seed `5000–5029`, theo thứ tự cố định và **giữ toàn bộ kết quả** trong [`artifacts/scenario_results.json`](artifacts/scenario_results.json). Hai kịch bản có thể tình cờ tìm cùng số lỗi dù nhãn sai và hàng chờ khác nhau. Hết 30 kịch bản, nút quay về kịch bản chính.
+
+Khi trình bày, chỉ cần **tải lại trang** để quay ngay về kịch bản chính 78 lỗi.
+
+Đây là **minh họa độ nhạy của phương pháp khi lỗi thay đổi**, không phải 30 evaluation set độc lập: ảnh evaluation được dùng lại, và các seed bổ sung được tạo sau thí nghiệm chính. Vì vậy số báo cáo trên slide vẫn là **78 so với random trung bình 9,64**. Không chọn một kịch bản bổ sung đẹp nhất để thay số chính. Nếu bị hỏi “sao chạy lại vẫn 78?”, hãy giải thích: chạy lại cùng seed chính thì tái lập 78; bấm kịch bản mới là một thử nghiệm mô phỏng khác.
+
 ## Demo bốc random mới sau mỗi lần bấm
 
 Mở [`artifacts/demo_live.html`](artifacts/demo_live.html). Trang mặc định hiện hàng chờ cố định của phương pháp nhóm. Mỗi lần bấm **Bốc random mới**, trang chọn một nhóm **100 ảnh khác** trong 2.000 ảnh evaluation và tính lại số lỗi tìm được, Recall@5% và Precision@5%. Bấm **Hiện đáp án** để xem từng ảnh trong lượt bốc đó; bấm **Xếp hạng của nhóm** để quay về danh sách và kết quả cố định **78 lỗi**.
@@ -85,6 +95,7 @@ python3 -m unittest discover -s tests -v
 python3 run_demo.py --output-dir artifacts/lan-chay-cua-ban
 python3 make_demo_page.py --output-dir artifacts/lan-chay-cua-ban
 python3 make_live_demo.py --output-dir artifacts/lan-chay-cua-ban
+python3 make_scenario_demo.py --output-dir artifacts/lan-chay-cua-ban
 ```
 
 Mỗi lần chạy hãy chọn **một thư mục output mới**. Script dừng nếu file kết quả đã tồn tại, để không ghi đè kết quả cũ. Sau khi chạy, mở `artifacts/lan-chay-cua-ban/demo.html` và đối chiếu `results.json`; các **số đếm/metric** phải giống bảng trên. Thời gian chạy có thể khác theo máy. `data/raw/` chứa bốn file IDX gzip nguồn; nếu tách riêng code khỏi thư mục này, tải chúng từ repository Fashion-MNIST và ghi lại hash mới.

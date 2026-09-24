@@ -137,3 +137,9 @@ Muốn chạy lại toàn bộ, xem [DEMO_GUIDE.md](DEMO_GUIDE.md). Chạy lại
 ## 11. Câu trả lời ngắn khi thuyết trình
 
 > **“Vì sao của nhóm luôn 78 còn random thì nhảy?”** Vì của nhóm là một quy tắc sắp xếp xác định trên cùng 2.000 ảnh. Random mỗi lần bốc một danh sách mới. Để so sánh công bằng, nhóm dùng **trung bình 100 lượt random đã khóa seed**, không chọn một lượt random xấu để đối đầu với 78. Kết quả 78 chỉ chứng minh hiệu quả trên dữ liệu mô phỏng này; nhóm vẫn bỏ sót nhiều lỗi `Shirt → T-shirt/top` nên quyết định **Rework**.
+
+## 12. Demo mới khi muốn thấy số của nhóm thay đổi
+
+Mở [demo_scenarios.html](artifacts/demo_scenarios.html) và bấm **Tạo kịch bản khác**. Mỗi lượt giữ nguyên 2.000 ảnh và thuật toán, nhưng tạo **200 lỗi nhãn mô phỏng mới** theo seed được hiện trên trang. Code tính lại điểm đáng nghi và top 100 của nhóm; random cũng chọn 100 ảnh trên **chính kịch bản ấy**. Vì tình huống lỗi thay đổi nên kết quả của nhóm có thể khác 78. Hai lượt cũng có thể trùng số lỗi một cách tình cờ.
+
+Trang có kịch bản gốc và 30 kịch bản bổ sung. Kịch bản đầu tìm 78 lỗi; kịch bản bổ sung đầu tiên tìm 72 lỗi. Toàn bộ seed và metric nằm trong [scenario_results.json](artifacts/scenario_results.json), không chỉ các lượt đẹp. Đây là phần minh họa bổ sung trên cùng tập ảnh, **không thay kết quả evaluation chính trên slide**. Chạy lại cùng một seed vẫn ra cùng kết quả; đó là điều cần có để người khác kiểm tra lại thí nghiệm.

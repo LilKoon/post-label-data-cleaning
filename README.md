@@ -1,5 +1,7 @@
 # C1 — Post-label Data Cleaning
 
+> **Muốn thấy kết quả nhóm thay đổi theo dữ liệu lỗi mới:** Mở [demo_scenarios.html](artifacts/demo_scenarios.html), bấm **Tạo kịch bản khác**, rồi so sánh hai hàng chờ trên cùng kịch bản. Xem [giải thích trong hướng dẫn](DEMO_GUIDE.md).
+
 > **Demo random tương tác:** Mở [demo_live.html](artifacts/demo_live.html) và bấm **Bốc random mới** để xem một danh sách 100 ảnh khác cùng metric mới. Xem [hướng dẫn thao tác](DEMO_GUIDE.md).
 
 > **Cập nhật demo (24/09/2026):** Prototype đã chạy trên Fashion-MNIST. Xem [hướng dẫn demo](DEMO_GUIDE.md), [demo offline](artifacts/demo.html), [5 slide PDF](artifacts/C1_Showcase.pdf), [PowerPoint](artifacts/C1_Showcase.pptx) và [kết quả đo](artifacts/results.json). Dòng “Trạng thái: Kế hoạch thí nghiệm” ở phần cũ bên dưới ghi lại trạng thái trước khi prototype được thực hiện.

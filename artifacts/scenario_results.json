@@ -1,0 +1,1216 @@
+{
+  "purpose": "Exploratory offline demo only; official reported metrics remain in results.json.",
+  "evaluation_images_reused": 2000,
+  "model_unchanged": "15-nearest-neighbor label disagreement (14x14 pixels)",
+  "scenarios": [
+    {
+      "kind": "official",
+      "noise_seed": 677,
+      "random_seed": 1000,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 78,
+        "total_errors": 200,
+        "error_recall": 0.39,
+        "precision": 0.78,
+        "found_by_type": {
+          "random": 49,
+          "systematic": 6,
+          "batch": 23
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 10,
+        "total_errors": 200,
+        "error_recall": 0.05,
+        "precision": 0.1,
+        "found_by_type": {
+          "random": 2,
+          "systematic": 6,
+          "batch": 2
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2000,
+      "random_seed": 5000,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 72,
+        "total_errors": 200,
+        "error_recall": 0.36,
+        "precision": 0.72,
+        "found_by_type": {
+          "random": 47,
+          "systematic": 2,
+          "batch": 23
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 10,
+        "total_errors": 200,
+        "error_recall": 0.05,
+        "precision": 0.1,
+        "found_by_type": {
+          "random": 3,
+          "systematic": 5,
+          "batch": 2
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2001,
+      "random_seed": 5001,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 78,
+        "total_errors": 200,
+        "error_recall": 0.39,
+        "precision": 0.78,
+        "found_by_type": {
+          "random": 53,
+          "systematic": 5,
+          "batch": 20
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 13,
+        "total_errors": 200,
+        "error_recall": 0.065,
+        "precision": 0.13,
+        "found_by_type": {
+          "random": 4,
+          "systematic": 6,
+          "batch": 3
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2002,
+      "random_seed": 5002,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 77,
+        "total_errors": 200,
+        "error_recall": 0.385,
+        "precision": 0.77,
+        "found_by_type": {
+          "random": 49,
+          "systematic": 4,
+          "batch": 24
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 8,
+        "total_errors": 200,
+        "error_recall": 0.04,
+        "precision": 0.08,
+        "found_by_type": {
+          "random": 3,
+          "systematic": 4,
+          "batch": 1
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2003,
+      "random_seed": 5003,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 73,
+        "total_errors": 200,
+        "error_recall": 0.365,
+        "precision": 0.73,
+        "found_by_type": {
+          "random": 48,
+          "systematic": 4,
+          "batch": 21
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 6,
+        "total_errors": 200,
+        "error_recall": 0.03,
+        "precision": 0.06,
+        "found_by_type": {
+          "random": 4,
+          "systematic": 2,
+          "batch": 0
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2004,
+      "random_seed": 5004,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 73,
+        "total_errors": 200,
+        "error_recall": 0.365,
+        "precision": 0.73,
+        "found_by_type": {
+          "random": 47,
+          "systematic": 2,
+          "batch": 24
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 8,
+        "total_errors": 200,
+        "error_recall": 0.04,
+        "precision": 0.08,
+        "found_by_type": {
+          "random": 3,
+          "systematic": 3,
+          "batch": 2
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2005,
+      "random_seed": 5005,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 73,
+        "total_errors": 200,
+        "error_recall": 0.365,
+        "precision": 0.73,
+        "found_by_type": {
+          "random": 47,
+          "systematic": 6,
+          "batch": 20
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 7,
+        "total_errors": 200,
+        "error_recall": 0.035,
+        "precision": 0.07,
+        "found_by_type": {
+          "random": 0,
+          "systematic": 5,
+          "batch": 2
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2006,
+      "random_seed": 5006,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 78,
+        "total_errors": 200,
+        "error_recall": 0.39,
+        "precision": 0.78,
+        "found_by_type": {
+          "random": 51,
+          "systematic": 4,
+          "batch": 23
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 14,
+        "total_errors": 200,
+        "error_recall": 0.07,
+        "precision": 0.14,
+        "found_by_type": {
+          "random": 8,
+          "systematic": 5,
+          "batch": 1
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2007,
+      "random_seed": 5007,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 74,
+        "total_errors": 200,
+        "error_recall": 0.37,
+        "precision": 0.74,
+        "found_by_type": {
+          "random": 46,
+          "systematic": 3,
+          "batch": 25
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 10,
+        "total_errors": 200,
+        "error_recall": 0.05,
+        "precision": 0.1,
+        "found_by_type": {
+          "random": 3,
+          "systematic": 5,
+          "batch": 2
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2008,
+      "random_seed": 5008,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 75,
+        "total_errors": 200,
+        "error_recall": 0.375,
+        "precision": 0.75,
+        "found_by_type": {
+          "random": 49,
+          "systematic": 6,
+          "batch": 20
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 15,
+        "total_errors": 200,
+        "error_recall": 0.075,
+        "precision": 0.15,
+        "found_by_type": {
+          "random": 5,
+          "systematic": 8,
+          "batch": 2
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2009,
+      "random_seed": 5009,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 77,
+        "total_errors": 200,
+        "error_recall": 0.385,
+        "precision": 0.77,
+        "found_by_type": {
+          "random": 47,
+          "systematic": 5,
+          "batch": 25
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 7,
+        "total_errors": 200,
+        "error_recall": 0.035,
+        "precision": 0.07,
+        "found_by_type": {
+          "random": 1,
+          "systematic": 3,
+          "batch": 3
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2010,
+      "random_seed": 5010,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 75,
+        "total_errors": 200,
+        "error_recall": 0.375,
+        "precision": 0.75,
+        "found_by_type": {
+          "random": 47,
+          "systematic": 6,
+          "batch": 22
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 7,
+        "total_errors": 200,
+        "error_recall": 0.035,
+        "precision": 0.07,
+        "found_by_type": {
+          "random": 2,
+          "systematic": 4,
+          "batch": 1
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2011,
+      "random_seed": 5011,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 75,
+        "total_errors": 200,
+        "error_recall": 0.375,
+        "precision": 0.75,
+        "found_by_type": {
+          "random": 51,
+          "systematic": 5,
+          "batch": 19
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 8,
+        "total_errors": 200,
+        "error_recall": 0.04,
+        "precision": 0.08,
+        "found_by_type": {
+          "random": 3,
+          "systematic": 4,
+          "batch": 1
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2012,
+      "random_seed": 5012,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 76,
+        "total_errors": 200,
+        "error_recall": 0.38,
+        "precision": 0.76,
+        "found_by_type": {
+          "random": 50,
+          "systematic": 2,
+          "batch": 24
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 5,
+        "total_errors": 200,
+        "error_recall": 0.025,
+        "precision": 0.05,
+        "found_by_type": {
+          "random": 1,
+          "systematic": 2,
+          "batch": 2
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2013,
+      "random_seed": 5013,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 77,
+        "total_errors": 200,
+        "error_recall": 0.385,
+        "precision": 0.77,
+        "found_by_type": {
+          "random": 51,
+          "systematic": 9,
+          "batch": 17
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 12,
+        "total_errors": 200,
+        "error_recall": 0.06,
+        "precision": 0.12,
+        "found_by_type": {
+          "random": 4,
+          "systematic": 6,
+          "batch": 2
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2014,
+      "random_seed": 5014,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 76,
+        "total_errors": 200,
+        "error_recall": 0.38,
+        "precision": 0.76,
+        "found_by_type": {
+          "random": 44,
+          "systematic": 3,
+          "batch": 29
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 7,
+        "total_errors": 200,
+        "error_recall": 0.035,
+        "precision": 0.07,
+        "found_by_type": {
+          "random": 0,
+          "systematic": 4,
+          "batch": 3
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2015,
+      "random_seed": 5015,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 77,
+        "total_errors": 200,
+        "error_recall": 0.385,
+        "precision": 0.77,
+        "found_by_type": {
+          "random": 49,
+          "systematic": 6,
+          "batch": 22
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 7,
+        "total_errors": 200,
+        "error_recall": 0.035,
+        "precision": 0.07,
+        "found_by_type": {
+          "random": 0,
+          "systematic": 6,
+          "batch": 1
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2016,
+      "random_seed": 5016,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 73,
+        "total_errors": 200,
+        "error_recall": 0.365,
+        "precision": 0.73,
+        "found_by_type": {
+          "random": 47,
+          "systematic": 7,
+          "batch": 19
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 18,
+        "total_errors": 200,
+        "error_recall": 0.09,
+        "precision": 0.18,
+        "found_by_type": {
+          "random": 7,
+          "systematic": 8,
+          "batch": 3
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2017,
+      "random_seed": 5017,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 78,
+        "total_errors": 200,
+        "error_recall": 0.39,
+        "precision": 0.78,
+        "found_by_type": {
+          "random": 47,
+          "systematic": 8,
+          "batch": 23
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 14,
+        "total_errors": 200,
+        "error_recall": 0.07,
+        "precision": 0.14,
+        "found_by_type": {
+          "random": 6,
+          "systematic": 5,
+          "batch": 3
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2018,
+      "random_seed": 5018,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 76,
+        "total_errors": 200,
+        "error_recall": 0.38,
+        "precision": 0.76,
+        "found_by_type": {
+          "random": 49,
+          "systematic": 4,
+          "batch": 23
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 13,
+        "total_errors": 200,
+        "error_recall": 0.065,
+        "precision": 0.13,
+        "found_by_type": {
+          "random": 8,
+          "systematic": 4,
+          "batch": 1
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2019,
+      "random_seed": 5019,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 75,
+        "total_errors": 200,
+        "error_recall": 0.375,
+        "precision": 0.75,
+        "found_by_type": {
+          "random": 48,
+          "systematic": 9,
+          "batch": 18
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 8,
+        "total_errors": 200,
+        "error_recall": 0.04,
+        "precision": 0.08,
+        "found_by_type": {
+          "random": 4,
+          "systematic": 2,
+          "batch": 2
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2020,
+      "random_seed": 5020,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 74,
+        "total_errors": 200,
+        "error_recall": 0.37,
+        "precision": 0.74,
+        "found_by_type": {
+          "random": 45,
+          "systematic": 8,
+          "batch": 21
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 3,
+        "total_errors": 200,
+        "error_recall": 0.015,
+        "precision": 0.03,
+        "found_by_type": {
+          "random": 1,
+          "systematic": 2,
+          "batch": 0
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2021,
+      "random_seed": 5021,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 78,
+        "total_errors": 200,
+        "error_recall": 0.39,
+        "precision": 0.78,
+        "found_by_type": {
+          "random": 47,
+          "systematic": 7,
+          "batch": 24
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 11,
+        "total_errors": 200,
+        "error_recall": 0.055,
+        "precision": 0.11,
+        "found_by_type": {
+          "random": 6,
+          "systematic": 4,
+          "batch": 1
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2022,
+      "random_seed": 5022,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 76,
+        "total_errors": 200,
+        "error_recall": 0.38,
+        "precision": 0.76,
+        "found_by_type": {
+          "random": 49,
+          "systematic": 7,
+          "batch": 20
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 15,
+        "total_errors": 200,
+        "error_recall": 0.075,
+        "precision": 0.15,
+        "found_by_type": {
+          "random": 3,
+          "systematic": 8,
+          "batch": 4
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2023,
+      "random_seed": 5023,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 75,
+        "total_errors": 200,
+        "error_recall": 0.375,
+        "precision": 0.75,
+        "found_by_type": {
+          "random": 49,
+          "systematic": 6,
+          "batch": 20
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 10,
+        "total_errors": 200,
+        "error_recall": 0.05,
+        "precision": 0.1,
+        "found_by_type": {
+          "random": 3,
+          "systematic": 5,
+          "batch": 2
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2024,
+      "random_seed": 5024,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 75,
+        "total_errors": 200,
+        "error_recall": 0.375,
+        "precision": 0.75,
+        "found_by_type": {
+          "random": 48,
+          "systematic": 6,
+          "batch": 21
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 8,
+        "total_errors": 200,
+        "error_recall": 0.04,
+        "precision": 0.08,
+        "found_by_type": {
+          "random": 1,
+          "systematic": 7,
+          "batch": 0
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2025,
+      "random_seed": 5025,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 78,
+        "total_errors": 200,
+        "error_recall": 0.39,
+        "precision": 0.78,
+        "found_by_type": {
+          "random": 46,
+          "systematic": 9,
+          "batch": 23
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 8,
+        "total_errors": 200,
+        "error_recall": 0.04,
+        "precision": 0.08,
+        "found_by_type": {
+          "random": 2,
+          "systematic": 3,
+          "batch": 3
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2026,
+      "random_seed": 5026,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 80,
+        "total_errors": 200,
+        "error_recall": 0.4,
+        "precision": 0.8,
+        "found_by_type": {
+          "random": 49,
+          "systematic": 7,
+          "batch": 24
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 10,
+        "total_errors": 200,
+        "error_recall": 0.05,
+        "precision": 0.1,
+        "found_by_type": {
+          "random": 5,
+          "systematic": 3,
+          "batch": 2
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2027,
+      "random_seed": 5027,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 75,
+        "total_errors": 200,
+        "error_recall": 0.375,
+        "precision": 0.75,
+        "found_by_type": {
+          "random": 49,
+          "systematic": 3,
+          "batch": 23
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 14,
+        "total_errors": 200,
+        "error_recall": 0.07,
+        "precision": 0.14,
+        "found_by_type": {
+          "random": 6,
+          "systematic": 4,
+          "batch": 4
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2028,
+      "random_seed": 5028,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 73,
+        "total_errors": 200,
+        "error_recall": 0.365,
+        "precision": 0.73,
+        "found_by_type": {
+          "random": 45,
+          "systematic": 6,
+          "batch": 22
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 9,
+        "total_errors": 200,
+        "error_recall": 0.045,
+        "precision": 0.09,
+        "found_by_type": {
+          "random": 5,
+          "systematic": 2,
+          "batch": 2
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    },
+    {
+      "kind": "exploratory",
+      "noise_seed": 2029,
+      "random_seed": 5029,
+      "model": {
+        "reviewed": 100,
+        "errors_found": 74,
+        "total_errors": 200,
+        "error_recall": 0.37,
+        "precision": 0.74,
+        "found_by_type": {
+          "random": 47,
+          "systematic": 5,
+          "batch": 22
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      },
+      "random": {
+        "reviewed": 100,
+        "errors_found": 9,
+        "total_errors": 200,
+        "error_recall": 0.045,
+        "precision": 0.09,
+        "found_by_type": {
+          "random": 4,
+          "systematic": 5,
+          "batch": 0
+        },
+        "total_by_type": {
+          "random": 80,
+          "systematic": 80,
+          "batch": 40
+        }
+      }
+    }
+  ]
+}
