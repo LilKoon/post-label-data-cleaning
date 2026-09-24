@@ -25,6 +25,8 @@ __pycache__/
 .codex-finalizer/
 build/*
 !build/showcase.mjs
+!build/showcase_peer_5min.mjs
+!build/found_a.png
 
 # Ad hoc experiment reruns; keep the official artifacts at the root
 artifacts/lan*/

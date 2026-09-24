@@ -26,7 +26,10 @@ Hai lần bốc có thể tình cờ tìm **cùng số lỗi** dù 100 ảnh đ�
 
 | File | Nội dung |
 | --- | --- |
-| [`artifacts/demo_live.html`](artifacts/demo_live.html) | **Bản nên dùng khi trình bày:** bấm random nhiều lần để lấy hàng chờ và metric mới. |
+| [`artifacts/C1_Peer_Showcase_5min.pdf`](artifacts/C1_Peer_Showcase_5min.pdf) | **Bản trình bày mới theo rubric 5 slide / 5 phút.** |
+| [`PRESENTATION_5_MINUTES.md`](PRESENTATION_5_MINUTES.md) | Lời thoại theo đồng hồ, thao tác demo, câu hỏi Q&A. |
+| [`artifacts/demo_scenarios.html`](artifacts/demo_scenarios.html) | **Bản nên dùng khi trình bày:** đổi kịch bản lỗi và tính lại cả hai hàng chờ. |
+| [`artifacts/demo_live.html`](artifacts/demo_live.html) | Bản minh họa biến thiên của riêng random baseline. |
 | [`artifacts/demo.html`](artifacts/demo.html) | Demo offline: chuyển giữa hàng chờ của nhóm và random; bật **Hiện đáp án** để xem từng ảnh có sai nhãn không. |
 | [`artifacts/C1_Showcase.pdf`](artifacts/C1_Showcase.pdf) | Bản chiếu 5 slide, phù hợp khi trình bày ở máy không có PowerPoint. |
 | [`artifacts/C1_Showcase.pptx`](artifacts/C1_Showcase.pptx) | Bản PowerPoint có thể chỉnh sửa, gồm chart và speaker notes. |
