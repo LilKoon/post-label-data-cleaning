@@ -1,0 +1,31 @@
+# Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local configuration and credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# macOS and editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local slide generation and preview files
+.chart-data-*/
+.codex-finalizer/
+build/*
+!build/showcase.mjs
+
+# Ad hoc experiment reruns; keep the official artifacts at the root
+artifacts/lan*/
+artifacts/reproduction-*/

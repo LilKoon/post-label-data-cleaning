@@ -1,0 +1,368 @@
+{
+  "status": "measured",
+  "dataset": "Fashion-MNIST (official Zalando Research files)",
+  "dataset_url": "https://github.com/zalandoresearch/fashion-mnist",
+  "license": "MIT",
+  "source_sha256": {
+    "train-images-idx3-ubyte.gz": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84",
+    "train-labels-idx1-ubyte.gz": "a04f17134ac03560a47e3764e11b92fc97de4d1bfaf8ba1a3aa29af54cc90845",
+    "t10k-images-idx3-ubyte.gz": "346e55b948d973a97e58d2351dde16a484bd415d4595297633bb08f03db6a073",
+    "t10k-labels-idx1-ubyte.gz": "67da17c76eaffca5446c3361aaab5c3cd6d1c2608764d35dfb1850b086bf8dd5"
+  },
+  "protocol": {
+    "split_seed": 20260924,
+    "development_noise_seed": 311,
+    "evaluation_noise_seed": 677,
+    "random_baseline_seeds": [
+      1000,
+      1099
+    ],
+    "development_size": 8000,
+    "evaluation_size": 2000,
+    "downstream_test_reserved": 2000,
+    "review_budget_fraction": 0.05,
+    "review_budget_count": 100,
+    "cross_split_exact_duplicate_pairs": 0,
+    "training_errors_by_type": {
+      "1": 320,
+      "2": 320,
+      "3": 160
+    }
+  },
+  "random_baseline": {
+    "runs": 100,
+    "mean_errors_found": 9.64,
+    "median_errors_found": 10.0,
+    "min_errors_found": 4,
+    "max_errors_found": 17,
+    "mean_error_recall": 0.048200000000000014,
+    "mean_precision": 0.09640000000000003,
+    "mean_found_by_type": {
+      "random": 3.74,
+      "systematic": 4.07,
+      "batch": 1.83
+    }
+  },
+  "model": {
+    "name": "15-nearest-neighbor label disagreement (14x14 pixels)",
+    "reviewed": 100,
+    "errors_found": 78,
+    "total_errors": 200,
+    "error_recall": 0.39,
+    "precision": 0.78,
+    "found_by_type": {
+      "random": 49,
+      "systematic": 6,
+      "batch": 23
+    },
+    "total_by_type": {
+      "random": 80,
+      "systematic": 80,
+      "batch": 40
+    },
+    "scoring_seconds": 0.15042416600044817
+  },
+  "stress_tests": [
+    {
+      "noise_rate": 0.05,
+      "reviewed": 100,
+      "errors_found": 52,
+      "total_errors": 100,
+      "error_recall": 0.52,
+      "precision": 0.52,
+      "found_by_type": {
+        "random": 31,
+        "systematic": 5,
+        "batch": 16
+      },
+      "total_by_type": {
+        "random": 40,
+        "systematic": 40,
+        "batch": 20
+      }
+    },
+    {
+      "noise_rate": 0.1,
+      "reviewed": 100,
+      "errors_found": 78,
+      "total_errors": 200,
+      "error_recall": 0.39,
+      "precision": 0.78,
+      "found_by_type": {
+        "random": 49,
+        "systematic": 6,
+        "batch": 23
+      },
+      "total_by_type": {
+        "random": 80,
+        "systematic": 80,
+        "batch": 40
+      }
+    },
+    {
+      "noise_rate": 0.2,
+      "reviewed": 100,
+      "errors_found": 90,
+      "total_errors": 400,
+      "error_recall": 0.225,
+      "precision": 0.9,
+      "found_by_type": {
+        "random": 56,
+        "systematic": 5,
+        "batch": 29
+      },
+      "total_by_type": {
+        "random": 160,
+        "systematic": 160,
+        "batch": 80
+      }
+    }
+  ],
+  "top_examples": [
+    {
+      "row": 13,
+      "source_image_id": 33007,
+      "current_label": "T-shirt/top",
+      "suggested_label": "Coat",
+      "reference_label": "Shirt",
+      "error_type": "systematic",
+      "suspicion_score": 1.0,
+      "batch_id": 99
+    },
+    {
+      "row": 22,
+      "source_image_id": 43671,
+      "current_label": "Bag",
+      "suggested_label": "Sneaker",
+      "reference_label": "Sneaker",
+      "error_type": "batch",
+      "suspicion_score": 1.0,
+      "batch_id": 0
+    },
+    {
+      "row": 39,
+      "source_image_id": 13802,
+      "current_label": "Shirt",
+      "suggested_label": "Sandal",
+      "reference_label": "Sandal",
+      "error_type": "random",
+      "suspicion_score": 1.0,
+      "batch_id": 50
+    },
+    {
+      "row": 69,
+      "source_image_id": 51897,
+      "current_label": "Dress",
+      "suggested_label": "Pullover",
+      "reference_label": "Pullover",
+      "error_type": "batch",
+      "suspicion_score": 1.0,
+      "batch_id": 0
+    },
+    {
+      "row": 71,
+      "source_image_id": 51154,
+      "current_label": "Dress",
+      "suggested_label": "Shirt",
+      "reference_label": "Shirt",
+      "error_type": "random",
+      "suspicion_score": 1.0,
+      "batch_id": 84
+    },
+    {
+      "row": 73,
+      "source_image_id": 9105,
+      "current_label": "T-shirt/top",
+      "suggested_label": "Trouser",
+      "reference_label": "Trouser",
+      "error_type": "random",
+      "suspicion_score": 1.0,
+      "batch_id": 63
+    },
+    {
+      "row": 84,
+      "source_image_id": 4499,
+      "current_label": "Sneaker",
+      "suggested_label": "T-shirt/top",
+      "reference_label": "T-shirt/top",
+      "error_type": "random",
+      "suspicion_score": 1.0,
+      "batch_id": 73
+    },
+    {
+      "row": 87,
+      "source_image_id": 55208,
+      "current_label": "Coat",
+      "suggested_label": "Ankle boot",
+      "reference_label": "Ankle boot",
+      "error_type": "random",
+      "suspicion_score": 1.0,
+      "batch_id": 96
+    },
+    {
+      "row": 127,
+      "source_image_id": 12733,
+      "current_label": "Sneaker",
+      "suggested_label": "Ankle boot",
+      "reference_label": "Sneaker",
+      "error_type": "none",
+      "suspicion_score": 1.0,
+      "batch_id": 23
+    },
+    {
+      "row": 147,
+      "source_image_id": 37465,
+      "current_label": "Ankle boot",
+      "suggested_label": "Sandal",
+      "reference_label": "Sandal",
+      "error_type": "random",
+      "suspicion_score": 1.0,
+      "batch_id": 83
+    },
+    {
+      "row": 174,
+      "source_image_id": 4108,
+      "current_label": "Pullover",
+      "suggested_label": "Trouser",
+      "reference_label": "Trouser",
+      "error_type": "batch",
+      "suspicion_score": 1.0,
+      "batch_id": 1
+    },
+    {
+      "row": 191,
+      "source_image_id": 34079,
+      "current_label": "Coat",
+      "suggested_label": "Pullover",
+      "reference_label": "Coat",
+      "error_type": "none",
+      "suspicion_score": 1.0,
+      "batch_id": 64
+    },
+    {
+      "row": 221,
+      "source_image_id": 21726,
+      "current_label": "Ankle boot",
+      "suggested_label": "Trouser",
+      "reference_label": "Trouser",
+      "error_type": "random",
+      "suspicion_score": 1.0,
+      "batch_id": 4
+    },
+    {
+      "row": 228,
+      "source_image_id": 56457,
+      "current_label": "Pullover",
+      "suggested_label": "Ankle boot",
+      "reference_label": "Ankle boot",
+      "error_type": "random",
+      "suspicion_score": 1.0,
+      "batch_id": 15
+    },
+    {
+      "row": 244,
+      "source_image_id": 18922,
+      "current_label": "Pullover",
+      "suggested_label": "T-shirt/top",
+      "reference_label": "Dress",
+      "error_type": "random",
+      "suspicion_score": 1.0,
+      "batch_id": 13
+    },
+    {
+      "row": 248,
+      "source_image_id": 29398,
+      "current_label": "Ankle boot",
+      "suggested_label": "Coat",
+      "reference_label": "Pullover",
+      "error_type": "random",
+      "suspicion_score": 1.0,
+      "batch_id": 15
+    },
+    {
+      "row": 260,
+      "source_image_id": 43379,
+      "current_label": "Sandal",
+      "suggested_label": "Ankle boot",
+      "reference_label": "Sandal",
+      "error_type": "none",
+      "suspicion_score": 1.0,
+      "batch_id": 84
+    },
+    {
+      "row": 278,
+      "source_image_id": 17834,
+      "current_label": "Dress",
+      "suggested_label": "T-shirt/top",
+      "reference_label": "Dress",
+      "error_type": "none",
+      "suspicion_score": 1.0,
+      "batch_id": 37
+    },
+    {
+      "row": 305,
+      "source_image_id": 42917,
+      "current_label": "Sneaker",
+      "suggested_label": "Pullover",
+      "reference_label": "Pullover",
+      "error_type": "random",
+      "suspicion_score": 1.0,
+      "batch_id": 41
+    },
+    {
+      "row": 313,
+      "source_image_id": 43156,
+      "current_label": "Dress",
+      "suggested_label": "Pullover",
+      "reference_label": "Pullover",
+      "error_type": "batch",
+      "suspicion_score": 1.0,
+      "batch_id": 1
+    },
+    {
+      "row": 330,
+      "source_image_id": 1448,
+      "current_label": "Trouser",
+      "suggested_label": "Coat",
+      "reference_label": "Trouser",
+      "error_type": "none",
+      "suspicion_score": 1.0,
+      "batch_id": 76
+    },
+    {
+      "row": 334,
+      "source_image_id": 44013,
+      "current_label": "Bag",
+      "suggested_label": "Ankle boot",
+      "reference_label": "Ankle boot",
+      "error_type": "random",
+      "suspicion_score": 1.0,
+      "batch_id": 77
+    },
+    {
+      "row": 353,
+      "source_image_id": 44417,
+      "current_label": "Trouser",
+      "suggested_label": "Sneaker",
+      "reference_label": "Sneaker",
+      "error_type": "random",
+      "suspicion_score": 1.0,
+      "batch_id": 54
+    },
+    {
+      "row": 354,
+      "source_image_id": 4129,
+      "current_label": "Trouser",
+      "suggested_label": "T-shirt/top",
+      "reference_label": "T-shirt/top",
+      "error_type": "batch",
+      "suspicion_score": 1.0,
+      "batch_id": 1
+    }
+  ],
+  "limitations": [
+    "Ground truth is the source dataset label; injected errors are known exactly, natural errors are not exhaustively audited.",
+    "Human review time and downstream model recovery have not been measured.",
+    "Model flags samples for review; it does not automatically correct labels."
+  ]
+}
